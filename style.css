@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+nav{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+}
+nav .logo{
+    margin-left: 125px;
+}
+
+nav .items{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin-right: 168px;
+}
+
+#language{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+nav option{
+    color: black;
+}
+
+nav .button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 0.25rem;
+    border: 2px solid rgb(229, 9, 20);
+}
+
+nav .button1 a{
+    color: white;
+    font-weight: 500;
+    font-size: 0.875rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav .button1:hover{
+    background-color: rgb(202, 3, 13);
+    border: 2px solid rgb(202, 3, 13);
+}
+
+@media screen and (max-width:768px) {
+    nav .logo{
+        margin-left: 5px;
+        width: 200px;
+    }
+    nav .logo img{
+        height: 76px;
+        width: 143px;
+    }
+    nav .items{
+        margin-right: 45px;
+    }
+    nav .button1{
+        width: 80px;
+    }
+    nav #language{
+        width: 90px;
+        margin-right: 10px;
+    }
+}
+main{
+    position: relative;
+}
+
+main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    background-image: url("Required Media/nflixbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(30%);
+    z-index: -1;
+}
+main .page1{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+}
+main .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight:bolder;
+    white-space: pre;
+}
+main .slogan{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+main .signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+}
+main .signup a{
+    font-size: 1.5rem;
+    font-weight: 650;
+    color: rgb(255, 255, 255);
+}
+main .signup:hover{
+    background-color: rgb(202, 3, 13);
+}
+
+@media screen and (max-width:768px){
+    main .page1{
+        height: 80vh;
+    }
+    main::before{
+        height: 80vh;
+
+    }
+    main .heading{
+        font-size: 2rem;
+    }
+    main .slogan{
+        font-size: 1rem;
+        font-weight: 400;
+        width: 100vw;
+    }
+}
+
+main .page2{
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    height: 115vh;
+    width: 100vw;
+}
+
+.page2 .heading2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 120px;
+    padding-top: 55px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page2 .firstContainer{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+}
+.page2 .container2{
+    box-sizing: border-box;
+    padding: 0px 25px;
+    display: flex;
+    width: 80vw;
+    height: 19.5rem;
+    overflow: auto;
+    gap: 50px;
+}
+.page2 .item{
+    margin-top: 25px;
+    position: relative;
+    min-width: 11.25rem;
+    height: 15.75rem;
+    border-radius: 10px;
+    overflow-x: visible;
+}
+.page2 .item:hover{
+    transform: scale(105%);
+    transition: 0.5s;
+}
+
+.page2 .item1{
+    background-image: url("Required Media/pushpa.webp");
+    background-size: cover;
+}
+.page2 a{
+    position: absolute;
+    bottom: 5px;
+    left: -20px;
+    margin-right: 100px;
+    color: black ;
+    font-size: 6.25rem;
+    -webkit-text-stroke: 0.10rem rgb(255, 255, 255);
+    font-weight: 700;
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+.page2 .item2{
+    background-image: url("Required Media/squid.webp");
+    background-size: cover;
+}
+.page2 .item3{
+    background-image: url("Required Media/neramillai.webp");
+    background-size: cover;
+}
+.page2 .item4{
+    background-image: url("Required Media/luckybhaskar.webp");
+    background-size: cover;
+}
+.page2 .item5{
+    background-image: url("Required Media/venom.webp");
+    background-size: cover;
+}
+.page2 .item6{
+    background-image: url("Required Media/bhoolBhulaiya.webp");
+    background-size: cover;
+}
+.page2 .item7{
+    background-image: url("Required Media/mismatched.webp");
+    background-size: cover;
+}
+.page2 .item8{
+    background-image: url("Required Media/amaran.webp");
+    background-size: cover;
+}
+.page2 .item9{
+    background-image: url("Required Media/indvspak.webp");
+    background-size: cover;
+}
+.page2 .heading3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight:500;
+    color: white;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.page2 .item10{
+    background-image: url("Required Media/devara.webp");
+    background-size: cover;
+}
+.page2 .secContainer{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.page2 .container3{
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding-left: 85px;
+    padding-right: 85px;
+
+}
+.page2 .box{
+    width: 16.5rem;
+    height: 12.25rem;
+    border-radius: 10px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);;
+}
+
+.page2 .headbox{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.page2 .parabox{
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width:768px){
+    .page2{
+        overflow: hidden;
+    }
+    .page2 .heading2{
+        margin-top: -168px;
+        margin-left: 25px;
+        position: absolute;
+        z-index: 1;
+    }
+    .page2 .container2{
+        box-sizing: content-box;
+        margin-left: -50px;
+        padding-left: 45px;
+        padding-top: 22px;
+        z-index: 1;
+        height: 16.5rem;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    .page2 .firstContainer{
+        margin-top: -105px;
+        height: 30vh;
+    }
+    .page2 .item{
+        min-width: 9.25rem;
+        height: 13.75rem;
+    }
+    .page2 a{
+        font-size: 5.25rem;
+    }
+    .page2 .heading3{
+        margin-left: 25px;
+        margin-top: 35px;
+    }
+    .page2 .container3{
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page2 .box{
+        width: 75vw;
+        height: 11.25rem;
+    }
+}
+main .page3{
+    min-height: 87vh;
+    width: 100vw;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.page3 .heading4{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 120px;
+    padding-top: 20px;
+}
+
+.page3 .thirdContainer{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.page3 .container4{
+    box-sizing: border-box;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: auto;
+}
+
+.page3 .quest{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(45,45,45);
+    transition: all 0.3s ease-out;
+    min-height: 84px;
+    width: 1123px;
+    justify-content: center;
+    cursor: pointer;
+}
+.page3 .realquestion{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 450;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1.5rem;
+}
+.page3 .sign{
+    color:white;
+    font-size: 3.5rem;
+    margin-right: 20px;
+    opacity: 0.9;
+}
+.page3 .questionContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.page3 .quest input{
+    display: none;
+}
+.quest label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.page3 .exppara {
+    font-size: 1.7rem;
+    font-weight: 450;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-height: 0;
+    overflow: hidden;
+    background: rgb(45,45,45);
+    color: white;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+}
+
+.page3 .quest input:checked~.exppara{
+    max-height: 220px;
+    padding: 20px;
+}
+  
+.quest:hover{
+    background-color: rgb(72, 72, 72);
+}
+
+.page3 .signupparent{
+    padding-top: 4.375rem;
+}
+.page3 .signup2{
+    margin: 0;
+    margin-left :clamp(1.5rem, 9vw, 9.9rem);
+}
+
+@media screen and (max-width:768px){
+    .page3 .heading4{
+        margin-left: 25px;
+        padding-top: 10px;
+    }
+    .page3 .quest{
+        width: 405px;
+    }
+    .page3 .realquestion{
+        font-size: 1.5rem;
+    }
+    .page3 .exppara{
+        font-size: 1rem;
+    }
+
+}
+.page4{
+    box-sizing: border-box;
+    height: 70vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+}
+.page4 .helpline{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 125px;
+}
+.page4 .maincontainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.page4 .container{
+    margin-top: 40px;
+    box-sizing: border-box;
+    margin-left: 125px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    gap: 130px;
+}
+.page4 a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    width: 127px;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.page4 .flang{
+    margin-top: 55px;
+    margin-left: 125px;
+
+}
+.page4 #language{
+    background-color: black;
+}
+.page4 .brandName{
+    color:rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 135px;
+}
+.page4 .extraspace{
+    height: 10vh;
+    background-color: black;
+}
+
+@media screen and (max-width:768px){
+    .page4{
+        height: 76vh;
+    }
+    .page4 .helpline{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-left: 25px;
+    }
+    .page4 .maincontainer{
+        gap: 15px;
+        padding-top: 20px;
+        align-items: flex-start;
+    }
+    .page4 .container{
+        gap: 15px;
+        margin-top: 0px;
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    .page4 .flang{
+        margin-left: 25px;
+        margin-top: 30px;
+    }
+    .page4 .brandName{
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+}
